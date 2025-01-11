@@ -3,7 +3,6 @@ import PostForm from "../../Components/PostForm/PostForm";
 import { UserContext } from "../../Components/Context/User.context";
 import { PostContext } from "../../Components/Context/Post.context";
 import PostCard from "../../Components/PostCard/PostCard";
-import UserDetails from "../../Components/UserDetails/UserDetails";
 import UserDetail from "../../Components/UserDetail/UserDetail";
 
 export default function Profile() {
