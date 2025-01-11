@@ -21,7 +21,6 @@ export default function PostProvider({ children }) {
     try {
       let { data } = await axios.request(options);
       setAllPosts(data.posts.reverse());
-      console.log(data);
     } catch (error) {
       console.log(error);
     }
