@@ -2,7 +2,7 @@ import axios from "axios";
 import { useFormik } from "formik";
 import { useContext, useState } from "react";
 import toast from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { object, string } from "yup";
 import { UserContext } from "../../Components/Context/User.context";
 
@@ -101,7 +101,12 @@ export default function Login() {
                 </p>
               )}
             </div>
-
+            <Link
+              to="/signup"
+              className="inline-block mt-4  text-black hover:text-blue-500"
+            >
+              Do not have account yet?
+            </Link>
             <button
               type="submit"
               className="btn w-full bg-blue-500 hover:bg-blue-600"
