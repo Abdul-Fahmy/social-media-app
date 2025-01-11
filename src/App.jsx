@@ -44,7 +44,7 @@ function App() {
         </GuestRoute>
       ),
       children: [
-        { path: "/login", element: <Login /> },
+        { index: true, element: <Login /> },
         { path: "/signup", element: <SignUp /> },
       ],
     },
