@@ -1,7 +1,8 @@
 import { useContext, useEffect } from "react";
-import { PostContext } from "../../Components/Context/Post.context";
+
 import PostCard from "../../Components/PostCard/PostCard";
 import PostForm from "../../Components/PostForm/PostForm";
+import { PostContext } from "../../Context/Post.context";
 
 export default function Home() {
   const { getPosts, allPosts } = useContext(PostContext);

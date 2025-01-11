@@ -1,6 +1,6 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import userImage from "../../assets/user.png";
-import { CommentContext } from "../Context/Comment.context";
+import { CommentContext } from "../../Context/Comment.context";
 
 export default function CommentCard({ commentInfo }) {
   const { commentCreator, content, createdAt, post, _id } = commentInfo;

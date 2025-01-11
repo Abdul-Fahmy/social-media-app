@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
-import CommentCard from "../CommentCard/CommentCard";
+
 import { useFormik } from "formik";
-import { CommentContext } from "../Context/Comment.context";
+
 import { useContext } from "react";
-import { PostContext } from "../Context/Post.context";
+import { CommentContext } from "../../Context/Comment.context";
+import { PostContext } from "../../Context/Post.context";
+import CommentCard from "../CommentCard/CommentCard";
 
 export default function PostCard({ postInfo, showAllComments = false }) {
   const { body, comments, createdAt, image, user, _id } = postInfo;

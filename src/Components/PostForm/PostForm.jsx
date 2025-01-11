@@ -1,9 +1,8 @@
 import { useContext, useRef, useState } from "react";
-import { UserContext } from "../Context/User.context";
-import { data } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
-import { PostContext } from "../Context/Post.context";
+import { PostContext } from "../../Context/Post.context";
+import { UserContext } from "../../Context/User.context";
 
 export default function PostForm() {
   const { token } = useContext(UserContext);

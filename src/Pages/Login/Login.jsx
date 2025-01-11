@@ -4,7 +4,7 @@ import { useContext, useState } from "react";
 import toast from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
 import { object, string } from "yup";
-import { UserContext } from "../../Components/Context/User.context";
+import { UserContext } from "../../Context/User.context";
 
 export default function Login() {
   const [error, setError] = useState(null);

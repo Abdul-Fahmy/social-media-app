@@ -1,8 +1,9 @@
 import { useContext, useRef, useState } from "react";
-import { UserContext } from "../Context/User.context";
+
 import { Link } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
+import { UserContext } from "../../Context/User.context";
 
 export default function UserDetail() {
   const { userInfo, token } = useContext(UserContext);

@@ -1,9 +1,10 @@
 import { useContext, useEffect } from "react";
 import PostForm from "../../Components/PostForm/PostForm";
-import { UserContext } from "../../Components/Context/User.context";
-import { PostContext } from "../../Components/Context/Post.context";
+
 import PostCard from "../../Components/PostCard/PostCard";
 import UserDetail from "../../Components/UserDetail/UserDetail";
+import { UserContext } from "../../Context/User.context";
+import { PostContext } from "../../Context/Post.context";
 
 export default function Profile() {
   const { getUserInfo } = useContext(UserContext);

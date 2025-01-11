@@ -5,12 +5,14 @@ import Home from "./Pages/Home/Home";
 import GuestRoute from "./Components/GuestRoute/GuestRoute";
 import SignUp from "./Pages/SignUp/SignUp";
 import Login from "./Pages/Login/Login";
-import UserProvider from "./Components/Context/User.context";
-import PostProvider from "./Components/Context/Post.context";
+
 import SinglePost from "./Pages/SinglePost/SinglePost";
-import CommentProvider from "./Components/Context/Comment.context";
+
 import { Toaster } from "react-hot-toast";
 import Profile from "./Pages/Profile/Profile";
+import UserProvider from "./Context/User.context";
+import PostProvider from "./Context/Post.context";
+import CommentProvider from "./Context/Comment.context";
 
 function App() {
   const routes = createBrowserRouter([
@@ -45,7 +47,7 @@ function App() {
       ),
       children: [
         {
-          path: "/login",
+          path: "/logIn",
           element: <Login />,
         },
         {

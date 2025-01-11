@@ -1,7 +1,8 @@
 import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { PostContext } from "../../Components/Context/Post.context";
+
 import PostCard from "../../Components/PostCard/PostCard";
+import { PostContext } from "../../Context/Post.context";
 
 export default function SinglePost() {
   let { id } = useParams();
