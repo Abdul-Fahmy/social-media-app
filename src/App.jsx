@@ -45,11 +45,11 @@ function App() {
       ),
       children: [
         {
-          path: "login",
+          path: "/login",
           element: <Login />,
         },
         {
-          path: "signup",
+          path: "/signup",
           element: <SignUp />,
         },
       ],
