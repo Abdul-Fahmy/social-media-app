@@ -4,6 +4,7 @@ import { UserContext } from "../../Components/Context/User.context";
 import { PostContext } from "../../Components/Context/Post.context";
 import PostCard from "../../Components/PostCard/PostCard";
 import UserDetails from "../../Components/UserDetails/UserDetails";
+import UserDetail from "../../Components/UserDetail/UserDetail";
 
 export default function Profile() {
   const { getUserInfo } = useContext(UserContext);
@@ -44,7 +45,7 @@ export default function Profile() {
           )}
         </div>
         <div className="right-side col-span-4">
-          <UserDetails />
+          <UserDetail />
         </div>
       </div>
     </>

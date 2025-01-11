@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
 
-export default function UserDetails() {
+export default function UserDetail() {
   const { userInfo, token } = useContext(UserContext);
   let postFile = useRef(null);
   const [preview, setPreview] = useState(null);
