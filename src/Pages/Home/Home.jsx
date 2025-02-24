@@ -12,15 +12,15 @@ export default function Home() {
   return (
     <>
       {allPosts ? (
-        <div className="grid grid-cols-12 my-6">
-          <div className="left-side col-span-4"></div>
-          <div className="center-side col-span-4">
+        <div className="grid px-6 grid-cols-12 my-6">
+          <div className="left-side hidden md:block md:col-span-2 lg:col-span-3"></div>
+          <div className="center-side col-span-12 md:col-span-8 lg:col-span-6">
             <PostForm />
             {allPosts.map((post) => (
               <PostCard key={post._id} postInfo={post} />
             ))}
           </div>
-          <div className="right-side col-span-4"></div>
+          <div className="right-side hidden md:block md:col-span-2 lg:col-span-3"></div>
         </div>
       ) : (
         <p>Loading...</p>

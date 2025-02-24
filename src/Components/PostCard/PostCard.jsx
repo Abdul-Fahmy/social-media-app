@@ -30,7 +30,7 @@ export default function PostCard({ postInfo, showAllComments = false }) {
       <div className="card border-solid border border-gray-400 shadow-sm rounded-md  mb-4">
         <div className="card-header flex justify-between  items-center px-3 py-2">
           <div className="user flex justify-center items-center gap-3 ">
-            <div className="avatar overflow-hidden w-10 h-10 rounded-full">
+            <div className="avatar overflow-hidden w-10 h-10 flex justify-center items-center rounded-full">
               <img src={user.photo} alt="avatar image" />
             </div>
             <div className="info flex flex-col justify-center items-start">
@@ -52,7 +52,7 @@ export default function PostCard({ postInfo, showAllComments = false }) {
 
         <div className="icons flex items-center justify-between py-3 px-4 ">
           <i className="fa-regular fa-thumbs-up text-gray-500 text-xl"></i>
-          <i className="fa-regular fa-comment text-gray-500 text-xl"></i>
+          
           <i className="fa-solid fa-share text-gray-500 text-xl"></i>
         </div>
         <div className="relative ">
