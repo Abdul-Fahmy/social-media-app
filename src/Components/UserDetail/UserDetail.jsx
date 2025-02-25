@@ -95,7 +95,7 @@ export default function UserDetail() {
               ) : (
                 ""
               )}
-              <Link className="btn bg-blue-400 hover:bg-blue-500">
+              <Link to={'/changePassword'} className="btn bg-blue-400 hover:bg-blue-500">
                 ChangePassword
               </Link>
             </div>

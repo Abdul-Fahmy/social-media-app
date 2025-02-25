@@ -8,7 +8,7 @@ export default function NavBar() {
   return (
     <>
       <section className="nav p-3 bg-slate-600">
-        <div className="container flex justify-between items-center w-3/4">
+        <div className="container flex justify-between items-center md:w-3/4">
           <h2 className="uppercase font-bold text-2xl text-white">Social</h2>
 
           <ul className="flex justify-center items-center gap-4">

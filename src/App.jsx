@@ -13,6 +13,7 @@ import Profile from "./Pages/Profile/Profile";
 import UserProvider from "./Context/User.context";
 import PostProvider from "./Context/Post.context";
 import CommentProvider from "./Context/Comment.context";
+import ChangePassword from "./Pages/ChangePassword/ChangePassword";
 
 function App() {
   const routes = createBrowserRouter([
@@ -36,6 +37,10 @@ function App() {
           path: "/profile",
           element: <Profile />,
         },
+        {
+          path:'/changePassword',
+          element:<ChangePassword />
+        }
       ],
     },
     {

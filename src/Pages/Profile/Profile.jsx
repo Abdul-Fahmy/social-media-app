@@ -16,9 +16,11 @@ export default function Profile() {
   }, []);
   return (
     <>
-      <div className="grid grid-cols-12 my-6">
-        <div className="left-side col-span-4"></div>
-        <div className="center-side col-span-4">
+      <div className="flex flex-col md:grid md:grid-cols-12 my-6 gap-6 px-4">
+      <div className="  right-side md:col-span-4">
+          <UserDetail />
+        </div>
+        <div className="center-side md:col-span-6">
           <PostForm />
           {userPosts === null ? (
             <p>Loading...</p>
@@ -44,9 +46,7 @@ export default function Profile() {
             </div>
           )}
         </div>
-        <div className="right-side col-span-4">
-          <UserDetail />
-        </div>
+        
       </div>
     </>
   );
