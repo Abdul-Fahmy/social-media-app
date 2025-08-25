@@ -21,7 +21,7 @@ export default function PostProvider({ children }) {
     try {
       let { data } = await axios.request(options);
       
-      setAllPosts(data.posts.reverse());
+      setAllPosts(data.posts);
     } catch (error) {
       console.log(error);
     }
@@ -56,9 +56,9 @@ export default function PostProvider({ children }) {
     try {
       let { data } = await axios.request(options);
       if (data.message === "success") {
-        console.log(data);
+        
 
-        setUserPosts(data.posts.reverse());
+        setUserPosts(data.posts);
       }
     } catch (error) {
       console.log(error);

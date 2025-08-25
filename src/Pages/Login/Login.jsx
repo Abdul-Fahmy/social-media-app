@@ -33,7 +33,7 @@ export default function Login() {
     };
     try {
       let { data } = await axios.request(options);
-      console.log(data);
+     
 
       if (data.message === "success") {
         toast.success("User Looged In Successfully");

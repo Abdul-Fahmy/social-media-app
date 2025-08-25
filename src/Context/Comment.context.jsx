@@ -19,7 +19,9 @@ export default function CommentProvider({ children }) {
     };
     try {
       let { data } = await axios.request(options);
-      console.log(data);
+      if (data.message === 'success') {
+        toast.success('Comment Created Successfully')
+      }
     } catch (error) {
       console.log(error);
     }
@@ -52,7 +54,7 @@ export default function CommentProvider({ children }) {
       let { data } = await axios.request(options);
       if (data.message === "success") {
         toast.success("Comment Deleted Successfully");
-        console.log(data);
+        
         window.location.reload();
       }
     } catch (error) {

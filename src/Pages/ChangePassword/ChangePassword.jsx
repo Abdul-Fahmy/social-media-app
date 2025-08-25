@@ -40,7 +40,7 @@ export default function ChangePassword() {
         };
         try {
           let { data } = await axios.request(options);
-          console.log(data);
+         
     
           if (data.message === "success") {
             toast.success("Password changed Successfully, please sign in again");

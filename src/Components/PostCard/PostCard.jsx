@@ -45,9 +45,9 @@ export default function PostCard({ postInfo, showAllComments = false }) {
             className="fa-solid fa-trash cursor-pointer hover:text-red-400"
           ></i>
         </div>
-        {image ? <img src={image} alt="post Image" /> : ""}
-        <div className="caption p-4">
-          <p>{body}</p>
+        {image ? <div className="w-full p-4"><img className="w-full" src={image} alt="post Image" /></div> : ""}
+        <div className="caption p-4 ">
+          <div className="flex flex-wrap"><p className="w-full break-words whitespace-pre-wrap ">{body}</p></div>
         </div>
 
         <div className="icons flex items-center justify-between py-3 px-4 ">

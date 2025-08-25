@@ -3,7 +3,7 @@ import userImage from "../../assets/user.png";
 import { CommentContext } from "../../Context/Comment.context";
 
 export default function CommentCard({ commentInfo }) {
-  const { commentCreator, content, createdAt, post, _id } = commentInfo;
+  const { commentCreator, content, createdAt, _id } = commentInfo;
   const { deleteComment } = useContext(CommentContext);
 
   function handleImagePath(path) {
