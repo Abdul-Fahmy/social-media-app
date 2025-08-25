@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 
 import PostCard from "../../Components/PostCard/PostCard";
 import { PostContext } from "../../Context/Post.context";
+import Loading from "../../Components/Loading/Loading";
 
 export default function SinglePost() {
   let { id } = useParams();
@@ -22,7 +23,7 @@ export default function SinglePost() {
           />
         </div>
       ) : (
-        <p>Loading...</p>
+       <Loading />
       )}
     </>
   );

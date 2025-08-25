@@ -5,6 +5,7 @@ import PostCard from "../../Components/PostCard/PostCard";
 import UserDetail from "../../Components/UserDetail/UserDetail";
 import { UserContext } from "../../Context/User.context";
 import { PostContext } from "../../Context/Post.context";
+import Loading from "../../Components/Loading/Loading";
 
 export default function Profile() {
   const { getUserInfo } = useContext(UserContext);
@@ -23,7 +24,7 @@ export default function Profile() {
         <div className="center-side md:col-span-6">
           <PostForm />
           {userPosts === null ? (
-            <p>Loading...</p>
+            <Loading />
           ) : (
             <div className="">
               {userPosts.length === 0 ? (

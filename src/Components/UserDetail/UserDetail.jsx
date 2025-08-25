@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { UserContext } from "../../Context/User.context";
+import Loading from "../Loading/Loading";
 
 export default function UserDetail() {
   const { userInfo, token } = useContext(UserContext);
@@ -101,7 +102,7 @@ export default function UserDetail() {
             </div>
           </>
         ) : (
-          <p>Loading...</p>
+          <Loading />
         )}
       </section>
     </>

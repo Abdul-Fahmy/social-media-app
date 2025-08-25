@@ -3,6 +3,7 @@ import { useContext, useEffect } from "react";
 import PostCard from "../../Components/PostCard/PostCard";
 import PostForm from "../../Components/PostForm/PostForm";
 import { PostContext } from "../../Context/Post.context";
+import Loading from "../../Components/Loading/Loading";
 
 export default function Home() {
   const { getPosts, allPosts } = useContext(PostContext);
@@ -23,7 +24,7 @@ export default function Home() {
           <div className="right-side hidden md:block md:col-span-2 lg:col-span-3"></div>
         </div>
       ) : (
-        <p>Loading...</p>
+        <Loading />
       )}
     </>
   );
